@@ -20,6 +20,6 @@ while i < len(csv):
     df2.val = pd.to_numeric(df2.val)
     df2.plot(kind='line', x='time', y='val')
 
-    plt.savefig(str(csv.iloc[fin, 1]) + '.png', bbox_inches='tight', pad_inches=0, dpi=25)
+    plt.savefig(str(i) + ' - ' + str(csv.iloc[fin, 1]) + '.png', bbox_inches='tight', pad_inches=0, dpi=25)
     inicio = inicio + 1
     i = i + 1
